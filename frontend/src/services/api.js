@@ -6,11 +6,8 @@ const getBackendURL = () => {
     return 'http://localhost:5001/api';
   }
 
-  const networkIP = '192.168.0.100'; 
-  if (hostname.startsWith('192.168.') || hostname === networkIP) {
-    return `http://${networkIP}:5001/api`;
-  }
-  return 'http://localhost:5001/api';
+  
+  return 'https://homelyhub-backend-ue7l.onrender.com/api';
 };
 
 const API_URL = getBackendURL();
