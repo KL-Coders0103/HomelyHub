@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build / output folders
+dist/
+build/
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.cache/
+.tmp/
+tmp/
+**/.eslintcache
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Database files (if using SQLite locally)
+*.sqlite
+*.sqlite-journal
+
+# Local uploads (if storing temporary files)
+uploads/
+temp/

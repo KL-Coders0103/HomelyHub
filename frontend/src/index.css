@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #FF385C;    /* HomelyHub red/pink */
+  --color-secondary: #008489;  /* Teal green */
+  --color-accent: #FF5A5F;     /* Coral accent */
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 200ms;
+  }
+  .btn-primary:hover {
+    background-color: #e02e4f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 56, 92, 0.3);
+  }
+
+  .btn-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 200ms;
+  }
+  .btn-secondary:hover {
+    background-color: #006e72;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 132, 137, 0.3);
+  }
+
+  .btn-accent {
+    background-color: var(--color-accent);
+    color: #fff;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 200ms;
+  }
+  .btn-accent:hover {
+    background-color: #ff4757;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 90, 95, 0.3);
+  }
+
+  .input-field {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    outline: none;
+    transition-property: all;
+    transition-duration: 200ms;
+  }
+  .input-field:focus {
+    box-shadow: 0 0 0 2px var(--color-primary);
+    border-color: transparent;
+  }
+
+  .card-hover {
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .card-hover:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+  }
+
+  /* Text colors */
+  .text-primary {
+    color: var(--color-primary);
+  }
+  
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+  
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  /* Background colors */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+  
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  /* Border colors */
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+  
+  .border-secondary {
+    border-color: var(--color-secondary);
+  }
+  
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+
+  /* Gradient backgrounds */
+  .gradient-primary {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  }
+  
+  .gradient-secondary {
+    background: linear-gradient(135deg, var(--color-secondary), #00a8a8);
+  }
+}
