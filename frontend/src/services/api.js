@@ -7,7 +7,7 @@ const getBackendURL = () => {
   }
 
   
-  return 'https://homelyhub-backend-ue7l.onrender.com/api';
+  return 'https://homelyhub-backend-85nl.onrender.com/api';
 };
 
 const API_URL = getBackendURL();
